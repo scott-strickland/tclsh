@@ -260,3 +260,4 @@ foreach ip {
 254
 255
 } { ios_config "interface lo $ip" "ip address 5.0.0.$ip 255.255.255.255" }
+tclquit
