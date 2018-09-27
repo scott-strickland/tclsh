@@ -12,3 +12,4 @@ foreach ip {
 150.1.9.9
 150.1.10.10
 } { ping $ip source lo0 }
+tclquit
