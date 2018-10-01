@@ -1,0 +1,7 @@
+# Removes the loopbacks created by the create-ordered-loopbacks script.
+# line 5 {$ip<255} determines the range of loopbacks to remove
+
+tclsh
+for {set ip 0}  {$ip<255} {incr ip} {
+ios_config "no interface lo$ip" }
+tclquit
