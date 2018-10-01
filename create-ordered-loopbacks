@@ -1,7 +1,7 @@
-# Used to created up to 255 loopbacks with /32 prefix length.
-# Will be creating something with random in Python to also build random networks.
+# In the example below in line 6 {$ip<255} dictates that the script will create
+# 255 loopback interfaces.  This number can be between 0-255
 
 tclsh
-for {set ip 0}  {$ip<6} {incr ip} {
-ios_config "interface lo $ip" "ip address 5.0.0.0$ip 255.255.255.255" }
+for {set ip 0}  {$ip<255} {incr ip} {
+ios_config "interface lo $ip" "ip address 2.0.0.0$ip 255.255.255.255" }
 tclquit
