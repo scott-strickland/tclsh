@@ -1,4 +1,6 @@
 ### Output to verify CEF hashing
+### 150.1.1.$ip = Source IP
+### 155.1.7.7 = Destination IP
 
 tclsh
 for {set ip 0}  {$ip<255} {incr ip} {
