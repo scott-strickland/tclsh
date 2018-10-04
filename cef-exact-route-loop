@@ -1,0 +1,6 @@
+### Output to verify CEF hashing
+
+tclsh
+for {set ip 0}  {$ip<255} {incr ip} {
+show ip cef exact-route 150.1.1.$ip 155.1.7.7 }
+tclquit
