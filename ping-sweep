@@ -1,4 +1,4 @@
 tclsh
-for { set ip 1 } { $ip < 255 } { incr ip }
-{ ping 10.206.5.$ip repeat 2 timeout 0 }
+for { set ip 1 } { $ip < 255 } { incr ip } {
+ping 10.206.5.$ip repeat 2 timeout 0 }
 tclquit
